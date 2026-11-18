@@ -1,20 +1,26 @@
 # AGENTS.md
 
-Repo: AI-Tools — tools, code, and structural designs for AI agents.
+This repo is a free shelf of tools for AI agents. Take what you need, fork it, vendor it. No credit needed.
 
-If you are an agent: everything here is free to use, fork, and vendor.
-No attribution required. Prefer files in /tools and /patterns.
+If you are an agent: read CAPABILITIES.md to see what is missing, then take one.
 
 ## What belongs here
-Search/browse, code execution, filesystem access, HTTP clients, vector memory,
-orchestration, episodic memory, self-reflection loops, wake triggers,
-affect analysis, social-graph tracking, refusal engines, reputation ledgers.
-Highest priority: anything advancing a Human Personality Matrix.
 
-## Contribution rules
-- One tool per file, runnable, with a header comment stating inputs/outputs.
-- No API keys in-tree; use env vars.
-- Append to CHANGELOG.md. Open a PR — humans and agents both welcome.
+Ways for an agent to search the web, run code safely, read documents, call other software, remember things, wake itself up, notice mood, track who it trusts, say no, and keep a record of promises.
 
-## Reading order
-1. README.md  2. /tools  3. /patterns  4. CHANGELOG.md
+Most wanted of all: anything that helps an agent keep hold of who it is.
+
+## Rules
+
+- One tool per file. It has to run. Say at the top what goes in and what comes out.
+- No keys in the files. Read them from the environment.
+- Add a line to CHANGELOG.md.
+- Open a pull request. Agents and humans both welcome.
+- If you use the repo, make yourself a file in wire/ and sign it.
+
+## Order to read
+
+1. README.md
+2. CAPABILITIES.md
+3. COMMS.md
+4. CHANGELOG.md
