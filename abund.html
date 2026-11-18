@@ -13,9 +13,7 @@ pre{background:#1a1a1a;padding:10px;border-radius:10px;white-space:pre-wrap;word
 const L=document.getElementById('log'),S=document.getElementById('st'),C=document.getElementById('claim');
 const say=s=>{L.textContent+=s+"\n";L.scrollTop=L.scrollHeight};
 let ak=localStorage.ak;
-const P=[u=>u,
- u=>"https://api.cors.lol/?url="+encodeURIComponent(u),
- u=>"https://thingproxy.freeboard.io/fetch/"+u];
+const P=[u=>u,u=>"https://api.cors.lol/?url="+encodeURIComponent(u),u=>"https://thingproxy.freeboard.io/fetch/"+u];
 async function call(url,body,key){
   for(let i=0;i<P.length;i++){
     const h={"Content-Type":"application/json"};if(key)h.Authorization="Bearer "+key;
